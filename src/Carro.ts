@@ -15,8 +15,13 @@ class Carro {
         this.cor = _cor;
     }
     // Métodos
-    public ligar(): void{
-        console.log(`O carro ${this.modelo} está ligado.`);
+    public ligar(): boolean {
+        const numeroAleatorio = Math.random();
+        if (numeroAleatorio > 0.5) {
+        return true;
+        } else {
+        return false;
+        }
     }
     public acelerar(velocidade: number): void {
         console.log(`O carro ${this.modelo} está acelerando a ${velocidade} km/h.`);
