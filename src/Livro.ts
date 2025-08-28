@@ -1,0 +1,27 @@
+class Livro {
+    // atributos
+    private titulo: string;
+    private autor: string;
+    private paginas: number;
+
+    // construtor
+    constructor(
+       _titulo: string,
+       _autor: string,
+       _paginas: number
+    ) {
+       this.titulo = _titulo;
+       this.autor = _autor;
+       this.paginas = _paginas;
+    }
+     //métodos
+    public ler(paginasLidas: number): void {
+         console.log(`Você leu ${paginasLidas} páginas de "${this.titulo}".`); 
+    }
+    public exibirDetalhes(): void {
+         console.log(`Título: ${this.titulo}, Autor: ${this.autor}, Páginas: ${this.paginas}`);}
+
+    
+}
+
+export default Livro;

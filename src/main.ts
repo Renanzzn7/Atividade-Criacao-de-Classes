@@ -1,0 +1,30 @@
+import Aluno from "./Aluno.js";
+import Carro from "./Carro.js";
+import Livro from "./Livro.js";
+
+let aluno1: Aluno = new Aluno("Renan", 20251234, "Economia");
+let aluno2: Aluno = new Aluno("Maria", 20251235, "Educação Física");
+
+aluno1.estudar("Juros Compostos");
+aluno2.estudar("Anatomia");
+
+aluno1.entregarAtividade();
+aluno2.entregarAtividade();
+
+let carro1: Carro = new Carro("Toyota Corolla", 2020, "Prata");
+let carro2: Carro = new Carro("Honda Civic", 2021, "Preto");
+
+carro1.ligar();
+carro2.ligar();
+
+carro1.acelerar(80);
+carro2.acelerar(125);
+
+let livro1: Livro = new Livro("1984", "George Orwell", 1949);
+let livro2: Livro = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", 1954);
+
+livro1.exibirDetalhes();
+livro2.exibirDetalhes();
+
+livro1.ler(45);
+livro2.ler(100);
